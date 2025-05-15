@@ -263,6 +263,9 @@
   {$DEFINE IDE_101up}
   {$DEFINE IDE_102up}
   {$DEFINE IDE_103up}
+  {$DEFINE IDE_104up}
+  {$DEFINE IDE_11up}
+  {$DEFINE IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER120}
@@ -285,6 +288,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER125}
@@ -307,6 +313,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER130}
@@ -329,6 +338,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER135}
@@ -351,6 +363,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER140}
@@ -372,6 +387,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER145}
@@ -393,6 +411,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER150}
@@ -413,6 +434,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER160}
@@ -433,6 +457,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER170}
@@ -452,6 +479,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER180}
@@ -470,6 +500,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER190}
@@ -487,6 +520,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER200}
@@ -503,6 +539,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER210}
@@ -518,6 +557,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER220}
@@ -532,6 +574,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER230}
@@ -545,6 +590,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER240}
@@ -557,6 +605,10 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER250}
@@ -568,6 +620,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER260}
@@ -578,6 +633,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER270}
@@ -587,6 +645,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER280}
@@ -595,6 +656,9 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER290}
@@ -602,21 +666,48 @@
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER300}
   {$UNDEF IDE_101up}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER310}
   {$UNDEF IDE_102up}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF VER320}
   {$UNDEF IDE_103up}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
+{$ENDIF}
+
+{$IFDEF VER330}
+  {$UNDEF IDE_104up}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
+{$ENDIF}
+
+{$IFDEF VER340}
+  {$UNDEF IDE_11up}
+  {$UNDEF IDE_12up}
+{$ENDIF}
+
+{$IFDEF VER350}
+  {$UNDEF IDE_12up}
 {$ENDIF}
 
 {$IFDEF MSWINDOWS}

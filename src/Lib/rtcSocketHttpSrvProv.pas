@@ -16,12 +16,14 @@ interface
 uses
   SysUtils,
 
+  System.Hash,  //17 Jan 2025 (iwan.c.sugeng@gmail.com) : Replace rtcCrypt
+
   rtcTypes,
   rtcSystem,
   rtcLog,
 
   rtcInfo,
-  rtcCrypt,
+//  rtcCrypt,   //17 Jan 2025 (iwan.c.sugeng@gmail.com) : Replace with System.Hash
   rtcConn,
   rtcConnProv,
 
@@ -735,9 +737,16 @@ procedure TRtcSocketHttpServerProvider.PrepareWSUpgradeResponseHeader;
   if Response.ValueCS['SEC-WEBSOCKET-ACCEPT']='' then
     if Request.ValueCS['SEC-WEBSOCKET-KEY']<>'' then
       Response['Sec-WebSocket-Accept'] :=
-        Mime_Encode ( SHA1_Digest (
-          Request['Sec-WebSocket-Key'] +
-          '258EAFA5-E914-47DA-95CA-C5AB0DC85B11' ) ); // WebSocket "accept" string
+        Mime_Encode (
+          THashSHA1.GetHashString(
+            Request['Sec-WebSocket-Key'] +
+            '258EAFA5-E914-47DA-95CA-C5AB0DC85B11'
+          )
+        ); // WebSocket "accept" string
+        //17 Jan 2025 (iwan.c.sugeng@gmail.com) : Using System.Hash.THashSHA1 method
+//        Mime_Encode ( SHA1_Digest (
+//          Request['Sec-WebSocket-Key'] +
+//          '258EAFA5-E914-47DA-95CA-C5AB0DC85B11' ) ); // WebSocket "accept" string
 
   Request.Close := False;
   end;

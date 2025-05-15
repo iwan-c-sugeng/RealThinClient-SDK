@@ -2391,7 +2391,7 @@ procedure TRtcDataClient.StartRequest;
     begin
     if AutoConnect and not (FConnecting or FReconnecting) then
       Connect;
-    Exit;
+//    Exit;     //15 May 2025 - iwan.c.sugeng@gmail.com : Why need to call exit, it will exit start request and won't update to new reqest
     end;
 
   if FToDisconnect then Exit;

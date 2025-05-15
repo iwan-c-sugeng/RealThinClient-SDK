@@ -7568,7 +7568,8 @@ function HPACK_Encode(const Source:TRtcHttpHeader; usingSSL:boolean=False; DynTa
       400: Add_Indexed(12); // 12: HPACK_Status = '400'
       404: Add_Indexed(13); // 13: HPACK_Status = '404'
       500: Add_Indexed(14); // 14: HPACK_Status = '500'
-      else
+
+      else
         begin
         fName:=HPACK_Status;
         fType:=SrcResponse.Status_Type;

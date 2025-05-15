@@ -1,16 +1,15 @@
 object Form1: TForm1
   Left = 121
   Top = 222
-  Width = 809
-  Height = 454
   Caption = 'RTC Web Socket Client Test'
+  ClientHeight = 408
+  ClientWidth = 791
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -13
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
@@ -18,9 +17,13 @@ object Form1: TForm1
   TextHeight = 16
   object Memo1: TMemo
     Left = 0
-    Top = 77
+    Top = 78
     Width = 594
-    Height = 332
+    Height = 330
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
     Align = alClient
     Lines.Strings = (
       '1. Enter "Addr" (Server Address)'
@@ -47,17 +50,25 @@ object Form1: TForm1
     Left = 0
     Top = 0
     Width = 791
-    Height = 77
+    Height = 78
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
     Align = alTop
     TabOrder = 1
     DesignSize = (
       791
-      77)
+      78)
     object Label1: TLabel
       Left = 8
       Top = 16
       Width = 29
       Height = 16
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'Addr'
     end
     object Label2: TLabel
@@ -65,6 +76,10 @@ object Form1: TForm1
       Top = 16
       Width = 24
       Height = 16
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Alignment = taRightJustify
       Anchors = [akTop, akRight]
       Caption = 'Port'
@@ -74,40 +89,60 @@ object Form1: TForm1
       Top = 44
       Width = 23
       Height = 16
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'URI'
     end
     object SrvAddr: TEdit
-      Left = 52
-      Top = 12
-      Width = 439
+      Left = 53
+      Top = 13
+      Width = 438
       Height = 24
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
       Text = 'localhost'
     end
     object SrvPort: TEdit
       Left = 561
-      Top = 12
+      Top = 13
       Width = 77
       Height = 24
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Anchors = [akTop, akRight]
       TabOrder = 1
       Text = '80'
     end
     object SrvURI: TEdit
-      Left = 52
+      Left = 53
       Top = 40
-      Width = 587
+      Width = 586
       Height = 24
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 2
       Text = '/'
     end
     object btnConnect: TButton
       Left = 646
-      Top = 9
+      Top = 14
       Width = 138
       Height = 56
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Anchors = [akTop, akRight]
       Caption = 'CONNECT'
       Font.Charset = DEFAULT_CHARSET
@@ -122,23 +157,35 @@ object Form1: TForm1
   end
   object Panel2: TPanel
     Left = 594
-    Top = 77
+    Top = 78
     Width = 197
-    Height = 332
+    Height = 330
+    Margins.Left = 4
+    Margins.Top = 4
+    Margins.Right = 4
+    Margins.Bottom = 4
     Align = alRight
     TabOrder = 2
     object Label4: TLabel
-      Left = 12
-      Top = 292
+      Left = 13
+      Top = 293
       Width = 27
       Height = 16
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'LOG'
     end
     object btnSendText: TButton
       Left = 6
       Top = 9
       Width = 90
-      Height = 33
+      Height = 34
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'Text'
       TabOrder = 0
       OnClick = btnSendTextClick
@@ -148,6 +195,10 @@ object Form1: TForm1
       Top = 41
       Width = 90
       Height = 33
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'Binary'
       TabOrder = 1
       OnClick = btnSendBinaryClick
@@ -156,7 +207,11 @@ object Form1: TForm1
       Left = 98
       Top = 9
       Width = 90
-      Height = 33
+      Height = 34
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'Ping'
       TabOrder = 2
       OnClick = btnSendPingClick
@@ -166,15 +221,23 @@ object Form1: TForm1
       Top = 41
       Width = 90
       Height = 33
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'Pong'
       TabOrder = 3
       OnClick = btnSendPongClick
     end
     object btnSendTxtOne: TButton
       Left = 6
-      Top = 77
+      Top = 78
       Width = 90
-      Height = 33
+      Height = 32
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'TXT one'
       TabOrder = 4
       OnClick = btnSendTxtOneClick
@@ -184,6 +247,10 @@ object Form1: TForm1
       Top = 213
       Width = 90
       Height = 33
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'Close'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -198,7 +265,11 @@ object Form1: TForm1
       Left = 6
       Top = 249
       Width = 90
-      Height = 33
+      Height = 34
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'Empty Q'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -211,9 +282,13 @@ object Form1: TForm1
     end
     object btnDisconnect: TButton
       Left = 98
-      Top = 212
+      Top = 213
       Width = 90
-      Height = 33
+      Height = 32
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'Disconnect'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -229,15 +304,23 @@ object Form1: TForm1
       Top = 145
       Width = 90
       Height = 33
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'EXE one'
       TabOrder = 5
       OnClick = btnSendExeOneClick
     end
     object btnSendTxtMulti: TButton
       Left = 98
-      Top = 77
+      Top = 78
       Width = 90
-      Height = 33
+      Height = 32
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'TXT multi'
       TabOrder = 6
       OnClick = btnSendTxtMultiClick
@@ -247,6 +330,10 @@ object Form1: TForm1
       Top = 145
       Width = 90
       Height = 33
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'EXE multi'
       TabOrder = 7
       OnClick = btnSendExeMultiClick
@@ -255,16 +342,24 @@ object Form1: TForm1
       Left = 6
       Top = 109
       Width = 90
-      Height = 33
+      Height = 34
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'TXT RAM'
       TabOrder = 8
       OnClick = btnSendTxtRamClick
     end
     object btnSendExeRam: TButton
       Left = 6
-      Top = 177
+      Top = 178
       Width = 90
-      Height = 33
+      Height = 32
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'EXE RAM'
       TabOrder = 9
       OnClick = btnSendExeRamClick
@@ -273,7 +368,11 @@ object Form1: TForm1
       Left = 98
       Top = 249
       Width = 90
-      Height = 33
+      Height = 34
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'Clear LOG'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -288,27 +387,38 @@ object Form1: TForm1
       Left = 98
       Top = 109
       Width = 90
-      Height = 33
+      Height = 34
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'TXT chunks'
       TabOrder = 14
       OnClick = btnSendTxtChunksClick
     end
     object btnSendExeChunks: TButton
       Left = 98
-      Top = 177
+      Top = 178
       Width = 90
-      Height = 33
+      Height = 32
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Caption = 'EXE chunks'
       TabOrder = 15
       OnClick = btnSendExeChunksClick
     end
     object cbLOG: TComboBox
-      Left = 52
+      Left = 53
       Top = 288
-      Width = 133
+      Width = 132
       Height = 24
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
       Style = csDropDownList
-      ItemHeight = 16
       ItemIndex = 2
       TabOrder = 16
       Text = 'General'
